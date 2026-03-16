@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Vehículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de selección de vehículo</h1>
+
+        <form id="userForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Introduce tu nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Introduce tu correo" required>
+
+            <label for="car">Selecciona un auto:</label>
+            <select id="car" required>
+                <option value="">--Selecciona un auto--</option>
+                <option value="auto1">Toyota Corolla</option>
+                <option value="auto2">Ford Mustang</option>
+                <option value="auto3">BMW X5</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="carInfo" class="car-info">
+            <h2>Información del Vehículo</h2>
+            <p id="info"></p>
+            <img id="carImage" src="" alt="Imagen del vehículo" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
